@@ -54,12 +54,11 @@
             android:layout_marginTop="230dp"
             android:text="Indonesia"
             android:textColor="@color/putih"
-            android:textSize="23dp"></TextView>
+            android:textSize="23dp"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -126,7 +125,6 @@
         android:orientation="vertical"
         android:weightSum="2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="0dp">
 
@@ -136,7 +134,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:text="About"
-            android:layout_marginLeft="170"
+            android:layout_marginLeft="170dp"
             android:textColor="@color/hitam"
             android:textSize="25dp"
             android:textStyle="bold">
@@ -148,7 +146,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:text="Yongki adalah mahasiswa ITN Malang yang sekerang menempuh semester 5.Lahir dan bertempat tinggal di Malang. "
-            android:layout_marginLeft="0"
             android:textColor="@color/hitam"
             android:textSize="20dp"
             android:textStyle="bold">
@@ -161,7 +158,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:text="Jurusan yang diambil di ITN Malang adalah Informatika S1 "
-            android:layout_marginLeft="0"
             android:textColor="@color/hitam"
             android:textSize="20dp"
             android:textStyle="bold">
@@ -174,7 +170,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:text="Dalam semester 5 ini ada beberapa mata kuliah yang dia ambil salah satunya adalah Mobile programming yang membahas tentang android studio. "
-            android:layout_marginLeft="0"
             android:textColor="@color/hitam"
             android:textSize="20dp"
             android:textStyle="bold">
