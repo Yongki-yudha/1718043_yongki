@@ -1,183 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_profil"
-    android:background="@color/putih"
+    android:background="@color/pink"
+    tools:context=".MainActivity"
     android:orientation="vertical">
 
     <RelativeLayout
-        android:id="@+id/relativeLayout2"
         android:layout_width="match_parent"
-        android:layout_height="350dp">
-
+        android:layout_height="407dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:background="@color/pink"
+            android:background="@color/pink2"
             android:orientation="vertical">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_margin="16dp"
-                android:src="@drawable/ic_drag_handle_white_24dp" />
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/abc_vector_test" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/yongki" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="Yongki Yudha"
+                android:textColor="@color/putih"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="346dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="Indonesia"
+                android:textAlignment="center"
+                android:textColor="@color/putih"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
         </LinearLayout>
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="80dp"
-            android:src="@drawable/yongki" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="22dp"
+            android:text="Liked"
+            android:textColor="@color/putih"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="200dp"
-            android:text="Yongki Yudha"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="22dp"
+            android:text="Following"
             android:textColor="@color/putih"
-            android:textSize="25dp"
-            android:textStyle="bold">
-
-        </TextView>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="230dp"
-            android:text="Indonesia"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="22dp"
+            android:text="Followers"
             android:textColor="@color/putih"
-            android:textSize="23dp"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:weightSum="2"
-        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout2">
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-            <TextView
-                android:id="@+id/jAppr"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:text="2321"
-                android:textColor="@color/putih"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/jAppr"
-                android:layout_centerHorizontal="true"
-                android:text="Follows"
-                android:textColor="@color/putih"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-            <TextView
-                android:id="@+id/jFollwi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:text="1987"
-                android:textColor="@color/putih"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/jFollwi"
-                android:layout_centerHorizontal="true"
-                android:text="Following"
-                android:textColor="@color/putih"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-        </RelativeLayout>
     </RelativeLayout>
 
-    <LinearLayout
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="-130dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="45dp"
+        android:text="87"
+        android:textColor="@color/putih"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-75dp"
+        android:text="232"
+        android:textColor="@color/putih"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="-30dp"
+        android:text="100"
+        android:textColor="@color/putih"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-black"/>
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="383dp"
-        android:background="@color/putih"
-        android:orientation="vertical"
-        android:weightSum="2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="0dp">
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="About"
+        android:layout_marginLeft="170dp"
+        android:textColor="@color/putih"
+        android:textSize="25dp"
+        android:textStyle="bold">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:text="About"
-            android:layout_marginLeft="170dp"
-            android:textColor="@color/hitam"
-            android:textSize="25dp"
-            android:textStyle="bold">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Yongki adalah mahasiswa ITN Malang yang sekerang menempuh semester 5.Lahir dan bertempat tinggal di Malang. "
+        android:textColor="@color/putih"
+        android:textSize="20dp"
+        android:textStyle="bold">
 
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:text="Yongki adalah mahasiswa ITN Malang yang sekerang menempuh semester 5.Lahir dan bertempat tinggal di Malang. "
-            android:textColor="@color/hitam"
-            android:textSize="20dp"
-            android:textStyle="bold">
+    </TextView>
 
-        </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Jurusan yang diambil di ITN Malang adalah Informatika S1 "
+        android:textColor="@color/putih"
+        android:textSize="20dp"
+        android:textStyle="bold">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:text="Jurusan yang diambil di ITN Malang adalah Informatika S1 "
-            android:textColor="@color/hitam"
-            android:textSize="20dp"
-            android:textStyle="bold">
+    </TextView>
 
-        </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Dalam semester 5 ini ada beberapa mata kuliah yang dia ambil salah satunya adalah Mobile programming yang membahas tentang android studio. "
+        android:textColor="@color/putih"
+        android:textSize="20dp"
+        android:textStyle="bold">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:text="Dalam semester 5 ini ada beberapa mata kuliah yang dia ambil salah satunya adalah Mobile programming yang membahas tentang android studio. "
-            android:textColor="@color/hitam"
-            android:textSize="20dp"
-            android:textStyle="bold">
+    </TextView>
 
-        </TextView>
-
-
-    </LinearLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
